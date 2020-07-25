@@ -3,6 +3,7 @@ include CONTRIBUTING.rst
 include HISTORY.rst
 include LICENSE
 include README.rst
+include phenotrex_gui/ui/*.ui
 
 recursive-include tests *
 recursive-exclude * __pycache__

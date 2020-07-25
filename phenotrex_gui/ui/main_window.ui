@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>278</width>
-    <height>31</height>
+    <height>28</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -24,74 +24,13 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>258</width>
+     <width>259</width>
      <height>404</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="1" column="0" colspan="2">
      <widget class="QTextEdit" name="input_files_display"/>
-    </item>
-    <item row="8" column="0">
-     <widget class="QPushButton" name="calculate_button">
-      <property name="text">
-       <string>Run Prediction!</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0" colspan="2">
-     <widget class="Line" name="line_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0" colspan="2">
-     <widget class="QPushButton" name="select_files_button">
-      <property name="toolTip">
-       <string>Select input genomes to predict phenotypes of. Valid input file formats are (potentially gzipped) DNA or Protein FASTA (.faa, .fna, .fasta)</string>
-      </property>
-      <property name="text">
-       <string>Select genome files..</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0" colspan="2">
-     <widget class="QTextEdit" name="input_models_display"/>
-    </item>
-    <item row="10" column="0">
-     <widget class="QLabel" name="console_log_label">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="text">
-       <string>Console Log</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="input_files_display_label">
-      <property name="text">
-       <string>Selected FASTA files</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="0" colspan="2">
-     <widget class="Line" name="line">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="input_models_display_label">
-      <property name="text">
-       <string>Selected Phenotrex models</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="1">
-     <widget class="QProgressBar" name="progressBar"/>
     </item>
     <item row="6" column="0" colspan="2">
      <widget class="QPushButton" name="select_models_button">
@@ -109,6 +48,67 @@
        <bool>true</bool>
       </property>
      </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QPushButton" name="select_files_button">
+      <property name="toolTip">
+       <string>Select input genomes to predict phenotypes of. Valid input file formats are (potentially gzipped) DNA or Protein FASTA (.faa, .fna, .fasta)</string>
+      </property>
+      <property name="text">
+       <string>Select genome files..</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="console_log_label">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Console Log</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="input_models_display_label">
+      <property name="text">
+       <string>Selected Phenotrex models</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="input_files_display_label">
+      <property name="text">
+       <string>Selected FASTA files</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <widget class="QTextEdit" name="input_models_display"/>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="calculate_button">
+      <property name="text">
+       <string>Run Prediction!</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QProgressBar" name="progressBar"/>
     </item>
    </layout>
   </widget>

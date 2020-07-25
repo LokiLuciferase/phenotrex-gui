@@ -30,9 +30,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self._input_files = []
         self._input_models = []
 
-    def __del__(self):
-        self.table.destroy()
-
     def get_files(self):
         home_dir = str(Path.home())
         fnames = QFileDialog.getOpenFileNames(
