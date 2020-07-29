@@ -24,7 +24,6 @@ setup(
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
     ],
     description="A user-friendly interface for Metagenomic Phenotype Prediction with phenotrex.",
     entry_points={
